@@ -6,6 +6,19 @@ servers:
 - description: Generated server url
   url: http://localhost:8080
 paths:
+  /api/pong:
+    get:
+      operationId: pong
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                type: string
+          description: OK
+      tags:
+      - ping-controller
+      x-accepts: application/json
   /api/ping:
     get:
       operationId: ping
