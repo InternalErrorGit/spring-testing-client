@@ -350,4 +350,11 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <spotless.version>2.27.2</spotless.version>
     </properties>
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>Github Packages</name>
+            <url>https://maven.pkg.github.com/InternalErrorGit/spring-testing-client</url>
+        </repository>
+    </distributionManagement>
 </project>
